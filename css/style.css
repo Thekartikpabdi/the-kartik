@@ -99,7 +99,7 @@ label{
 
 .box:focus{
 	outline: none;
-	background-color: #5a5;
+	background-color: white;
 }
 
 .box:focus ~ label {
