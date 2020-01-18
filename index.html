@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THE KARTIK</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li ><a href="#">ABOUT</a></li>
+				<li><a href="#">PROJECTS</a></li>
+				<li><a href="#">FIND ME</a></li>
+				<li><a href="#">RESUME</a></li>
+				<li><a href="#">HELP</a></li>
+			</ul>
+		<div class="title">
+			<h1>THE KARTIK</h1>
+		</div>
+		<div class="go">
+			<form>
+				<div class="input_group">
+
+				<label for="FirstName">First Name</label>
+				<input type="text" name="" class="box" id="FirstName">
+				</div>
+
+				<div class="input_group">
+					<input type="text" name="" class="box" id="LastName">
+				<label for="LastName">Last Name</label>
+				</div>
+				<div class="input_group">
+					<textarea id="Message" class="box"></textarea>
+					<label for="Message">Your Message</label>
+				</div>
+				<div class="input_group">
+					<input type="submit" name="" class="submit_btn" value="submit">
+				</div>
+			</form>
+		</div>
+		<script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>">
+
+		<script type="text/javascript">
+			$(".box").on("focusin",function(){
+				$(this).parent().find("label").addclass("active");
+			});
+
+				$(".box").on("focusout",function(){
+					if (!this.value) {
+				$(this).parent().find("label").removeclass("active");
+			}
+			});
+		</script>
+		</header>
+
+</body>
+</html>
